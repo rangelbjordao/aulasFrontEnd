@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // frutas = ["Banana", "maça", "pera", "uva", "salada mista"];
+        //document.write(frutas.length)
+        //document.write('<br>' + frutas[3])
+        // frutas[3] = "manga";
+        // document.write(frutas);
+        // document.write('<br>');
+        // frutas.push("abacaxi");
+        // document.write(frutas);
+        // frutas.pop();
+        // document.write('<br>');
+        // document.write(frutas);
+        // frutas.splice(3, 1)
+        // document.write('<br>');
+        // document.write(frutas);
+        // suco = frutas.slice(2);
+        // document.write('<br>');
+        // document.write(frutas);
+        // document.write('<br>');
+        // document.write(suco);
+
+        carros = ["volvo", "fiat", "ford", "austin martin", "scania", "toyota", "honda"];
+        // document.write(carros.sort());
+        // document.write('<br>');
+        // document.write(carros.reverse());
+        // document.write('<br>');
+        // document.write(carros.toSorted());
+        
+        // n = Math.random() * carros.length;
+        // document.write('<br>');
+        // document.write(carros[Math.floor(n)]);
+
+        carros2 = carros.map(x);
+
+        document.write(carros2)
+
+        function x(value, index, array) {
+            return value.toUpperCase();
+        }
+    </script>
+</body>
+
+</html>
