@@ -1,0 +1,136 @@
+*{
+    background-color: black;
+    background-size: 1020px;
+}
+
+h1{
+    color: white;
+}
+
+.sigla{
+    font-size: 20px;
+    margin: 0px;
+}
+
+.texto{
+    font-size: 10px;
+    margin: 0px;
+}
+
+.linha{
+    width: 1020px;
+}
+
+.elemento-verde{
+    text-align: center;
+    color: greenyellow;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 1px;
+}
+
+.elemento-azul{
+    text-align: center;
+    color: #3bb4ff;
+    border: 2px solid #3bb4ff;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 1px;
+}
+
+.elemento-laranja{
+    text-align: center;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 1px;
+}
+
+.elemento-amarelo{
+    text-align: center;
+    color: yellow;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 1px;
+}
+
+.elemento-ciano{
+    text-align: center;
+    color: cyan;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 1px;
+}
+
+.elemento-branco{
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 1px;
+}
+
+.elemento-azul-claro{
+    text-align: center;
+    color: lightblue;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 1px;
+}
+
+.elemento-rosa{
+    text-align: center;
+    color: #ffa8b6;
+    border: 2px solid #ffa8b6;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 1px;
+}
+
+.elemento-roxo-claro{
+    text-align: center;
+    color: #ffa3fc;
+    border: 2px solid #ffa3fc;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 1px;
+}
+
+.espaco-vazio{
+    text-align: center;
+    border: 2px solid;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 1px;
+}
+
+#rodape{
+    color: white;
+    margin: 10px;
+}
