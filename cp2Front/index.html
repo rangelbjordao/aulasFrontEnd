@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>CheckPoint 02</h1>
+        </div>
+    </header>
+    <form action="">
+        <div class="wrapper">
+            <h2>Formulario de Cadastro</h2>
+
+            <fieldset class="identificacao">
+                <legend>Identificacao</legend>
+
+                <div class="docs">
+                    <label for="">Nome Completo*</label>
+                    <input type="text" name="txtNome" id="Nome" class="campos">
+                </div>
+
+                <div class="docs">
+                    <label for="txtRG">RG*</label>
+                    <input type="number" name="txtRG" id="txtRG" class="campos">
+                </div>
+
+                <div class="docs">
+                    <label for="txtCPF">CPF*</label>
+                    <input type="number" name="txtCPF" id="txtCPF" class="campos">
+                </div>
+
+                <div class="docs">
+                    <label for="txtSenha">Senha*</label>
+                    <input type="password" name="txtSenha" id="txtSenha" class="campos">
+                </div>
+
+                <div class="docs">
+                    <label for="txtConfSenha">Corfirme a senha*</label>
+                    <input type="number" name="txtConfSenha" id="txtConfSenha" class="campos">
+                </div>
+
+                <div class="docs">
+                    <label for="rdoSexo">Sexo*</label><br>
+                    <input type="radio" name="sexo" id="sexoM">Masculino
+                    <input type="radio" name="sexo" id="sexoF">Feminino
+                    <input type="radio" name="sexo" id="sexoO">Outros
+                </div>
+
+            </fieldset>
+
+            <fieldset class="fotografia">
+                <legend>Fotografia</legend>
+            </fieldset>
+
+            <input type="reset" value="Limpar">
+            <button type="button" onclick="validar()">Enviar</button>
+        </div>
+    </form>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
