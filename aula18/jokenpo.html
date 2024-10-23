@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="pontos"></div>
+    <br>
+
+    <script>
+        var opcoes = ["Papel", "Pedra", "Tesoura"];
+        var gameOver = false;
+        var pontuacao = 0;
+
+        do {
+            var opcao = parseInt(prompt("Escolha uma opcao: \n1 - Papel\n2 - Pedra\n3 - Tesoura"));
+
+            if (opcao > 0 && opcao < 4) {
+                var resp = Math.ceil(Math.random() * 3);
+                alert("O computador escolheu " + opcoes[resp - 1]);
+
+                if (opcao == resp) {
+                    alert("A rodada empatou!");
+                }
+
+                else if ((opcao == 1 && resp == 2) || (opcao == 2 && resp == 3) || (opcao == 3 && resp == 1)) {
+                    alert("Voce ganhou!")
+                    pontuacao++;
+                    pontos.textContext = pontuacao;
+                }
+
+                else {
+                    alert("O computador ganhou!");
+                    gameOver = true;
+                }
+
+            } else {
+                gameOver = true;
+            }
+
+        } while (gameOver == false);
+        alert("Voce perdeu! \nA sua pontuacao foi de: " + pontuacao + " pontos")
+
+    </script>
+</body>
+
+</html>

@@ -11,38 +11,77 @@
             sep1 = ".";
             sep2 = "-";
             sep3 = "(";
-            sep3 = ")";
+            sep4 = ")";
 
             if (formato == "cpf") {
                 if (objeto.value.length == 3) {
-                    objeto.value = objeto.value + sep1
+                    objeto.value = objeto.value + sep1;
                 } else {
                     if (objeto.value.length == 7) {
-                        objeto.value = objeto.value + sep1
+                        objeto.value = objeto.value + sep1;
                     } else {
                         if (objeto.value.length == 11) {
-                            objeto.value = objeto.value + sep2
+                            objeto.value = objeto.value + sep2;
                         }
                     }
                 }
             }
+
+            if (formato == 'cep') {
+                if (objeto.value.length == 5) {
+                    objeto.value += sep2;
+                }
+            }
+
+            if (formato == 'tel') {
+                if (objeto.value.length == 0) {
+                    objeto.value += sep3;
+                } else if (objeto.value.length == 3) {
+                    objeto.value += sep4 + " ";
+                } else if (objeto.value.length == 10) {
+                    objeto.value += sep2;
+                }
+            }
         }
+
+        function SomenteNumero(e) {
+            var tecla = (window.event) ? event.keyCode : e.which;
+            if ((tecla == 8) || (tecla == 9) || (tecla > 47 && tecla < 58) || (tecla > 95 && tecla < 106)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function desabilitaEnter(e) {
+            if (e.keyCode == 13) {
+                return false;
+            }
+        }
+
     </script>
 </head>
 
 <body>
-    <form>
+    <form onkeypress="return desabilitaEnter(event)">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" maxlength="14">
+        <br>
+
         <label for="cpf">CPF</label>
-        <input type="text" name="cpf" id="cpf" onkeypress="Mascara('cpf',this)" maxlength="14">
+        <input type="text" name="cpf" id="cpf" onkeypress="Mascara('cpf',this)" onkeydown="return SomenteNumero(event)"
+            maxlength="14">
         <br>
 
         <label for=" cep">CEP</label>
-        <input type="text" name="cep" id="cep">
+        <input type="text" name="cep" id="cep" onkeypress="Mascara('cep',this)" onkeydown="return SomenteNumero(event)"
+            maxlength="9">
         <br>
 
-        <label for="title">Telefone</label>
-        <input type="text" name="tel" id="tel">
+        <label for="tel">Telefone</label>
+        <input type="text" name="tel" id="tel" onkeypress="Mascara('tel',this)" maxlength="15">
         <br>
+        <input type="submit" value="Enviar">
     </form>
 </body>
 
