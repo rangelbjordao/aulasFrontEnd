@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="frmContarPalavras">
+        <textarea id="texto" placeholder="Digite sua frase aqui..." rows="10" cols="70" maxlength="200"></textarea>
+    </form>
+    <p>Quantidade de palavras: <span id="contador">0</span></p>
+    <div id="resultado"></div>
+    <p>Quantidade de caracteres: <span id="contadorCaracteres">0</span></p>
+    <div id="resultadoCaracteres"></div>
+</body>
+
+<script>
+    function contarPalavras(frase) {
+        let palavras = frase.trim().split(/\s+/);
+
+
+        return frase.trim() === "" ? 0 : palavras.length;
+    }
+
+    function contarCaracteres(frase) {
+        const limiteCaracteres = 200
+
+        if (frase.length >= limiteCaracteres) {
+            alert('limite de caracteres atingido')
+        }
+        
+        return frase.length;
+    }
+
+    document.getElementById('texto').addEventListener('input', function () {
+        let texto = this.value;
+        let totalPalavras = contarPalavras(texto);
+        let totalCaracteres = contarCaracteres(texto);
+        document.getElementById('contador').innerText = totalPalavras
+        document.getElementById('contadorCaracteres').innerText = totalCaracteres
+    })
+
+</script>
+
+</html>
