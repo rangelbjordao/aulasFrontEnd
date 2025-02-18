@@ -7,7 +7,7 @@ function Card() {
 }
 export default Card;
 
-function Auxiliar() {
+export function Auxiliar() {
     return(
         <>
             <h2>Criando funcoes auxiliares</h2>
