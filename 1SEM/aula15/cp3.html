@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 1300px;
+            height: 1300px;
+            background-color: yellow;
+            position: relative;
+        }
+
+        #imgCachorro {
+            position: absolute;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <script>
+        function Mover() {
+            var cachorro = document.getElementById("imgCachorro")
+            var pos = 0;
+            var direcao = "direita"
+            tempo = setInterval(Animacao, 5)
+
+            function Animacao() {
+                if (direcao == "direita") {
+                    cachorro = document.getElementById("imgCachorro").src = "imagens/cachorro_andando_direita.gif";
+                    cachorro.style.left = pos + "px";
+                    pos++;
+                    if (pos == 1027) {
+                        direcao = "esq";
+                    }
+                }
+                if (direcao == "esq") {
+                    cachorro.style.left = pos + "px";
+                    pos--;
+                    if (pos == 0) {
+                        direcao = "direita";
+                    }
+                }
+            }
+        }
+    </script>
+    <button type="button" onclick="Mover()">Click</button>
+    <div id="container">
+        <div id="imgCachorro">
+            <img src="imagens/cachorro_parado.gif">
+        </div>
+    </div>
+</body>
+
+</html>
