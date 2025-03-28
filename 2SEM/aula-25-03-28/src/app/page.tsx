@@ -17,15 +17,37 @@ type FormValue = {
 
 export default function Home() {
 
-    const { register, watch, handleSubmit, formState: { errors } } = useForm<FormValue>();
+    const { register, watch, setValue, setFocus, handleSubmit, formState: { errors } } = useForm<FormValue>();
 
     const onSubmit: SubmitHandler<FormValue> = (data) => {
         console.log(data)
     }
 
+    const cep = watch("cep");
 
     const senha = watch("senha");
 
+    const buscarEndereco = async (cep: string) => {
+        if (cep.length === 8) {
+            try {
+                const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+                const data = await response.json();
+                if (data.error) {
+                    alert("CEP nao encontrado!");
+                }
+                else {
+                    setValue("rua", data.logradouro);
+                    setValue("bairro", data.bairro);
+                    setValue("cidade", data.localidade);
+                    setValue("estado", data.uf);
+                    setFocus("numero");
+                }
+            }
+            catch (error) {
+                alert("Erro ao buscar o endereco!")
+            }
+        }
+    }
 
     return (
         <>
