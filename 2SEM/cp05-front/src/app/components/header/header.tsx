@@ -4,7 +4,7 @@ import Link from "next/link";
 export function Header() {
     return (
         <>
-            <header className="w-full bg-white py-6 text-sm sm:text-base md:text-lg lg:text-xl">
+            <header className="w-full bg-amber-300 py-6 text-sm sm:text-base md:text-lg lg:text-xl">
                 <div className="w-4xl max-w-11/12 mx-auto flex justify-between items-center">
                     {/* Logo */}
                     <Link href="/" aria-label="Ir para a página inicial">

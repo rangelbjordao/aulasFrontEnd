@@ -1,7 +1,9 @@
 export default function Home() {
     return (
         <>
-            <h1 className="text-center">CP 05</h1>
+            <main>
+                <h1 className="my-2 text-center text-3xl font-bold">CP 05</h1>
+            </main>
         </>
     );
 }
