@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from "react";
-import CompReceita from "./components/compReceita/compReceita";
+import CompReceita from "./components/CompReceita/CompReceita";
 
 export default function Home() {
     const [receitas, setReceitas] = useState<Receita[]>([]);
