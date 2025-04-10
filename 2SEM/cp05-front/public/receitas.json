@@ -1,0 +1,55 @@
+[
+    {
+        "id": 1,
+        "titulo": "Bolo de Cenoura",
+        "descricao": "Um delicioso bolo com cobertura de chocolate.",
+        "ingredientes": [
+            "3 cenouras médias",
+            "2 xícaras de açúcar",
+            "3 ovos",
+            "1 xícara de óleo",
+            "2 xícaras de farinha de trigo",
+            "1 colher de sopa de fermento em pó"
+        ],
+        "modoDePreparo": "Bata no liquidificador as cenouras, ovos e óleo. Em seguida, adicione os ingredientes secos e misture bem. Asse em forno preaquecido a 180ºC por cerca de 40 minutos.",
+        "categoria": "Sobremesas",
+        "imagem": "/imagens/bolo-cenoura.jpg",
+        "tempoPreparo": "40 minutos",
+        "porcoes": 8
+    },
+    {
+        "id": 2,
+        "titulo": "Feijoada",
+        "descricao": "Tradicional prato brasileiro com feijão preto e carnes.",
+        "ingredientes": [
+            "500g de feijão preto",
+            "200g de carne seca",
+            "150g de linguiça calabresa",
+            "1 cebola picada",
+            "3 dentes de alho",
+            "Sal e temperos a gosto"
+        ],
+        "modoDePreparo": "Deixe o feijão e as carnes de molho. Cozinhe o feijão, frite os temperos e adicione as carnes. Cozinhe tudo junto por cerca de 1 hora.",
+        "categoria": "Pratos Principais",
+        "imagem": "/imagens/feijoada.jpg",
+        "tempoPreparo": "1 hora e 30 minutos",
+        "porcoes": 6
+    },
+    {
+        "id": 3,
+        "titulo": "Salada Caesar",
+        "descricao": "Uma salada leve e deliciosa com molho cremoso.",
+        "ingredientes": [
+            "Alface romana",
+            "Croutons",
+            "Parmesão ralado",
+            "Molho Caesar",
+            "Frango grelhado (opcional)"
+        ],
+        "modoDePreparo": "Lave a alface, adicione os croutons e o queijo. Misture com o molho Caesar e sirva com frango grelhado, se desejar.",
+        "categoria": "Entradas",
+        "imagem": "/imagens/salada-caesar.jpg",
+        "tempoPreparo": "15 minutos",
+        "porcoes": 2
+    }
+]
