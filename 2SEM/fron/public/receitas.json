@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "categoria": "salgados",
+      "nomeurl": "Prato-Primavera-com-Frango-Grelhado",
+      "nome": "Prato Primavera com Frango-Grelhado",
+      "ingredientes": [
+        "Carne moída (200g)",
+        "Pão de hambúrguer",
+        "Alface",
+        "Queijo cheddar",
+        "TomateHambúrguer Clássico",
+        "Maionese",
+        "Ketchup"
+      ],
+      "descricao": "Um prato completo e balanceado com peito de frango grelhado suculento, acompnahado de batatas douradas ao forno, brócolis levemente cozido no vapor,cenouraras macias e ervilhas frescas formando uma refeição colorida,nutritiva e cheia de sabor ",
+      "modo_preparo": "1. Modele a carne em formato de hambúrguer e grelhe até atingir o ponto desejado.\n2. Toste o pão de hambúrguer na frigideira.\n3. Monte o hambúrguer com o queijo, alface, tomate, maionese e ketchup no pão.\n4. Sirva imediatamente.",
+      "tempo": "20 minutos",
+      "imagem": "freepik__background__3907",
+      "destaque": true,
+      "favorito":false,
+      "porcoes":12
+    },
+    {
+      "id": 2,
+      "categoria": "salgados",
+      "nome": "classic",
+      "ingredientes": [
+        "Carne moída (200g)",
+        "Pão de hambúrguer",
+        "Alface",
+        "Queijo cheddar",
+        "Tomate",
+        "Maionese",
+        "Ketchup"
+      ],
+      "modo_preparo": "1. Modele a carne em formato de hambúrguer e grelhe até atingir o ponto desejado.\n2. Toste o pão de hambúrguer na frigideira.\n3. Monte o hambúrguer com o queijo, alface, tomate, maionese e ketchup no pão.\n4. Sirva imediatamente.",
+      "tempo": "20 minutos",
+      "imagem": "foto-hamb",
+      "destaque": false,
+      "favorito":false,
+      "nomeurl": "classico",
+      "porcoes":12
+    }
+  ]
