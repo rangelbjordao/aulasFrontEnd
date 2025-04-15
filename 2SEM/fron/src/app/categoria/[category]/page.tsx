@@ -68,7 +68,7 @@ const CategoryPage = () => {
                                 className="object-cover w-full h-48"
                                 sizes="100vw"
                             />
-                            <h2 className="font-bold text-xl text-center mt-4">{receita.nome}</h2>
+                            <h2 className="font-bold text-xl text-center mt-4 text-black">{receita.nome}</h2>
 
                             <div className="flex-grow flex items-end">
                                 <Link href={`/categoria/${category}/${encodeURIComponent(receita.nomeurl)}`} className="w-full flex justify-center pb-4 px-4">

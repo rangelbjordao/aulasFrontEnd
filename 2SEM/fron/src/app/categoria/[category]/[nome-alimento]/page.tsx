@@ -47,7 +47,7 @@ const ReceitaDetalhe = () => {
         <>
             <main className="max-w-xl mx-auto my-10 p-6 text-center items-center">
                 <h1 className="text-3xl w-full font-bold bg-blue-900 rounded-md text-white mb-4">{receitaDetalhe.nome}</h1>
-                <article className=" border border-gray-200 rounded-md shadow-md flex flex-col gap-6 bg-blue-100">
+                <article className=" border border-gray-200 rounded-md shadow-md flex flex-col gap-6 bg-blue-100 text-black">
                     <Image
                         src={`/images/${receitaDetalhe.imagem}.png`}
                         alt={`Imagem da receitaDetalhe ${receitaDetalhe.imagem}`}
