@@ -13,7 +13,7 @@ export function Header() {
                     <Link href="/" aria-label="Ir para a página inicial">
                         <Image
                             src="/images/—Pngtree—food logo_8239850.png"
-                            alt="Logo da CCR"
+                            alt="Logo"
                             width={80}
                             height={80}
                             className="w-14 h-14 md:w-16 md:h-16 lg:h-20 lg:w-20"
@@ -29,37 +29,25 @@ export function Header() {
                                     Início
                                 </Link>
                             </li>
-                            <li>
-                                <Link className="font-bold text-white px-2 hover:underline" href="/integrantes">
-                                    Favoritos
-                                </Link>
-
-                            </li>
 
 
                             <li>
-                                <Link className="font-bold text-white px-2 hover:underline" href="/favoritos">
+                                <Link className="font-bold text-white px-2 hover:underline" href="/novidades">
                                     Novidades
                                 </Link>
 
                             </li>
+
                             <li>
                                 <DropDownCategories />
                             </li>
+
+
 
                         </ul>
 
 
                     </nav>
-
-                    {/* Campo pesquisa */}
-
-                    <input
-                        type="text"
-                        placeholder="Pesquisar..."
-                        className="px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-amber-950 border-white  text-white"
-                    />
-
                 </div>
             </header>
         </>

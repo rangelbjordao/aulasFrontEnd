@@ -1,5 +1,5 @@
 export function Footer() {
-
+ 
     return (
         <>
             <footer className=" text-white text-center py-1 bg-blue-950 mt-auto bottom-0 inset-x-0">
